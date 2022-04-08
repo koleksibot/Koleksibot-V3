@@ -56,7 +56,7 @@ const sr = ScrollReveal({
     delay: 400,
 })
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "https://api.countapi.xyz/hit/rootsec.xyz/visits");
+xhr.open("GET", "https://api.countapi.xyz/hit/exploits.my.id/visits");
 xhr.responseType = "json";
 xhr.onload = function() {
     document.getElementById('sitor').innerText =  this.response.value;
@@ -92,7 +92,7 @@ $('#profile').addClass('active')
                             <div class="projects__modal">
                                 <div>
                                     <span class="projects__subtitle">${data.name}</span>
-                                    <h3 class="projects__title">${(data.description == null) ? "Tidak ada deskripsi": data.description}</h3>
+                                    <h3 class="projects__title">${(data.description == null) ? "Click Here": data.description}</h3>
                                     <a href="${data.svn_url}" class="projects__button button button__small">
                                         <i class="ri-link"></i>
                                     </a>
@@ -133,10 +133,10 @@ $(document).bind("contextmenu",function(e){
 
 
 sr.reveal(`.profile__border`)
-sr.reveal(`.profile__name`, {delay: 500})
-sr.reveal(`.profile__profession`, {delay: 600})
-sr.reveal(`.profile__social`, {delay: 700})
-sr.reveal(`.profile__info-group`, {interval: 100, delay: 700})
-sr.reveal(`.profile__buttons`, {delay: 800})
-sr.reveal(`.filters__content`, {delay: 900})
+sr.reveal(`.profile__name`, {delay: 200})
+sr.reveal(`.profile__profession`, {delay: 300})
+sr.reveal(`.profile__social`, {delay: 600})
+sr.reveal(`.profile__info-group`, {interval: 200, delay: 400})
+sr.reveal(`.profile__buttons`, {delay: 500})
+sr.reveal(`.filters__content`, {delay: 700})
 sr.reveal(`.filters`, {delay: 1000})
